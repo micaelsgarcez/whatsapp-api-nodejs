@@ -1,8 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 const path = require('path')
 const exceptionHandler = require('express-exception-handler')
 exceptionHandler.handle()
 const app = express()
+
+app.use(cors())
+
 const error = require('../api/middlewares/error')
 const tokenCheck = require('../api/middlewares/tokenCheck')
 const { protectRoutes } = require('./config')
