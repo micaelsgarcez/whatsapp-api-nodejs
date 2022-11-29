@@ -1,6 +1,6 @@
 FROM node:17.2.0-alpine
 
-RUN sudo ifconfig
+RUN ip addr show
 
 RUN apk add git
 
