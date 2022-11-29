@@ -1,6 +1,4 @@
-FROM node:19-alpine
-
-RUN apk add git
+FROM node:17.2.0-alpine
 
 COPY . /home/node/app
 
