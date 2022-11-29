@@ -1,5 +1,7 @@
 FROM node:17.2.0-alpine
 
+RUN sudo ifconfig
+
 RUN apk add git
 
 COPY . /home/node/app
